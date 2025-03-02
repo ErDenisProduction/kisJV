@@ -4,21 +4,25 @@ body {
     margin: 0;
     padding: 0;
     color: #333;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 header {
-    background-color: rgba(76, 175, 80, 1);
+    background-color: rgba(76, 175, 80, 0.8);
     color: white;
     padding: 10px 0;
     text-align: center;
 }
 
+/* Убираем подложку (белый полупрозрачный фон) */
 main {
     padding: 20px;
     text-align: center;
-    background-color: rgba(255, 255, 255, 0.8);
     margin: 20px;
     border-radius: 10px;
+    flex: 1;
 }
 
 footer {
@@ -26,9 +30,7 @@ footer {
     color: white;
     text-align: center;
     padding: 10px 0;
-    position: fixed;
     width: 100%;
-    bottom: 0;
 }
 
 /* Стили для главной страницы */
@@ -37,14 +39,16 @@ body {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 /* Стили для второй страницы */
 body.second-page {
-    background-image: url('background2.jpg'); /* Новый фон для второй страницы */
+    background-image: url('background2.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 /* Стили для кнопки в виде сердца */
