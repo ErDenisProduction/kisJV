@@ -1,11 +1,8 @@
+/* Общие стили для обеих страниц */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-image: url('background.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
     color: #333;
 }
 
@@ -22,6 +19,32 @@ main {
     background-color: rgba(255, 255, 255, 0.8);
     margin: 20px;
     border-radius: 10px;
+}
+
+footer {
+    background-color: rgba(51, 51, 51, 0.8);
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+/* Стили для главной страницы */
+body {
+    background-image: url('background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* Стили для второй страницы */
+body.second-page {
+    background-image: url('background2.jpg'); /* Новый фон для второй страницы */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 /* Стили для кнопки в виде сердца */
@@ -78,14 +101,4 @@ main {
 
 .back-button:hover {
     background-color: #45a049;
-}
-
-footer {
-    background-color: rgba(51, 51, 51, 0.8);
-    color: white;
-    text-align: center;
-    padding: 10px 0;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
 }
