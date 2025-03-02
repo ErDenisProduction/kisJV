@@ -1,0 +1,91 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #333;
+}
+
+header {
+    background-color: rgba(76, 175, 80, 0.8);
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+main {
+    padding: 20px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.8);
+    margin: 20px;
+    border-radius: 10px;
+}
+
+/* Стили для кнопки в виде сердца */
+.heart-button {
+    width: 50px;
+    height: 50px;
+    background-color: #ff4d4d;
+    position: relative;
+    transform: rotate(-45deg);
+    cursor: pointer;
+    margin: 20px auto;
+}
+
+.heart-button::before,
+.heart-button::after {
+    content: '';
+    width: 50px;
+    height: 50px;
+    background-color: #ff4d4d;
+    border-radius: 50%;
+    position: absolute;
+}
+
+.heart-button::before {
+    top: -25px;
+    left: 0;
+}
+
+.heart-button::after {
+    top: 0;
+    left: 25px;
+}
+
+.heart-button:hover {
+    background-color: #ff1a1a;
+}
+
+.heart-button:hover::before,
+.heart-button:hover::after {
+    background-color: #ff1a1a;
+}
+
+/* Стили для кнопки "Вернуться назад" */
+.back-button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #4CAF50;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.back-button:hover {
+    background-color: #45a049;
+}
+
+footer {
+    background-color: rgba(51, 51, 51, 0.8);
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
